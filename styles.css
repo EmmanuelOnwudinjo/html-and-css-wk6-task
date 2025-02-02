@@ -1,0 +1,418 @@
+/* styles.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%; /* Ensure full width */
+    height: 30px;
+    background-color: #ffffff;
+    box-sizing: border-box; /* Include padding in width */
+}
+
+.logo {
+    font-family: 'Lobster', cursive;
+    font-size: 24px;
+    font-weight: 400;
+    color: #000000;
+    text-decoration: none;
+}
+
+.menu {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.menu-item {
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -0.32px;
+    color: #000000;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.menu-item:hover {
+    color: #666666;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons img {
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.social-icons img:hover {
+    opacity: 0.7;
+}
+
+.contact-container {
+    max-width: 100%; /* Use full width */
+    margin: 0 auto;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 4vw; /* Responsive font size */
+    font-weight: 600;
+    letter-spacing: -2.56px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.form-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    width: 100%;
+}
+
+.image-container {
+    flex: 0 0 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+}
+
+.form-container {
+    flex: 1;
+    max-width: 840px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-group {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap; /* Allow wrapping */
+}
+
+label {
+    display: block;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.96px;
+    text-transform: uppercase;
+    color: rgba(0,0,0,0.6);
+    margin-bottom: 12px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 0 20px;
+    height: 60px;
+    border-radius: 16px;
+    border: 1px solid rgba(0,0,0,0.1);
+    font-size: 14px;
+    letter-spacing: -0.28px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 200px;
+    resize: none;
+    padding-top: 20px;
+}
+
+select {
+    appearance: none;
+    background: url('data:image/svg+xml;utf8,<svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L6 5L11 1" stroke="black" stroke-width="2"/></svg>') no-repeat right 20px center;
+    background-color: #fff;
+}
+
+button {
+    width: 180px;
+    height: 64px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 16px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: -0.32px;
+    cursor: pointer;
+    align-self: center;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+.subscribe-card {
+    width: 90%;
+    max-width: 1280px;
+    height: auto;
+    background-color: #E8F5FF;
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 40px auto;
+}
+
+.subscribe-card h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    letter-spacing: -1.92px;
+    color: #000000;
+    margin: 0;
+}
+
+.subscribe-card p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.75;
+    color: #00000099;
+    margin: 20px 0;
+}
+
+.email-input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.email-input {
+    width: 60%;
+    max-width: 480px;
+    height: 50px;
+    padding: 0 20px;
+    border: none;
+    border-radius: 24px;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #000000;
+    letter-spacing: -0.28px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.email-input::placeholder {
+    color: #00000066;
+}
+
+.subscribe-button {
+    width: 160px;
+    height: 50px;
+    margin-left: -10px;
+    background-color: #000000;
+    border: none;
+    border-radius: 16px;
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: -0.28px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.subscribe-button:hover {
+    background-color: #333333;
+}
+
+.decorative-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.container {
+    max-width: 100%; /* Use full width */
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 600;
+    letter-spacing: -1.44px;
+    margin-bottom: 40px;
+}
+
+.recipe-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.recipe-card {
+    width: 290px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.recipe-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.recipe-card h3 {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: -0.72px;
+    line-height: 26px;
+    margin: 16px 0;
+}
+
+.recipe-details {
+    display: flex;
+    gap: 24px;
+}
+
+.recipe-details div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.recipe-details span {
+    color: rgba(0,0,0,0.6);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+footer {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+.top-section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.brand {
+    font-family: 'Lobster', cursive;
+    font-size: 24px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.description {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: rgba(0,0,0,0.6);
+    max-width: 400px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 40px;
+}
+
+.nav-links a {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -0.32px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.bottom-section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyright {
+    font-family: 'Eudoxus Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: -0.36px;
+    color: rgba(0,0,0,0.6);
+}
+
+.social-icons img {
+    height: 50px;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        gap: 20px;
+    }
+
+    .input-group {
+        flex-direction: column;
+    }
+
+    .form-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .subscribe-card h1 {
+        font-size: 2rem;
+    }
+
+    .email-input {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .navigation {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .social-icons {
+        margin-top: 10px;
+    }
+}
